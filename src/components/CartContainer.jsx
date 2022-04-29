@@ -20,7 +20,7 @@ const CartContainer = () => {
     return (
         <section className="cart">
             <header>
-                <h2>your bag</h2>
+                <h2>your cart</h2>
             </header>
             <div>
                 {cartItems.map((item) => {
@@ -31,7 +31,7 @@ const CartContainer = () => {
                 <hr />
                 <div className="cart-total">
                     <h4>
-                        total <span>${total}</span>
+                        total <span>₹{total}</span>
                     </h4>
                 </div>
                 <button

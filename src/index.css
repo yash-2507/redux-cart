@@ -34,6 +34,9 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+svg {
+  width: 30px;
+}
 a {
   text-decoration: none;
 }
@@ -225,8 +228,8 @@ Cart Item
   margin: 1.5rem 0;
 }
 .cart-item img {
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
   object-fit: cover;
 }
 .cart-item h4 {
