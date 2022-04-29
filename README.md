@@ -6,3 +6,5 @@ Tech Used:
 1. React-Redux
 2. React-Toolkit
 3. Basics of JS and React.JS
+
+Testing
