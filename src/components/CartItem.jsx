@@ -1,5 +1,5 @@
-import { ChevronDown, ChevronUp, DeleteIcon } from "../icons";
-import { removeItem, increase, decrease } from "../features/cart/cartSlice";
+import { DeleteIcon, PlusIcon, MinusIcon } from "../icons";
+import { removeItem, toggle } from "../features/cart/cartSlice";
 import { useDispatch } from "react-redux";
 
 export default function CartItem({ id, img, title, price, amount }) {
@@ -19,16 +19,13 @@ export default function CartItem({ id, img, title, price, amount }) {
                     <DeleteIcon />
                 </button>
             </div>
-            <div>
-                <button
-                    className="amount-btn"
-                    onClick={() => {
-                        dispatch(increase({ id }));
-                    }}
-                >
-                    <ChevronUp />
-                </button>
-                <p className="amount">{amount}</p>
+            <div
+                style={{
+                    display: "flex",
+                    gap: 20,
+                    alignItems: "center",
+                }}
+            >
                 <button
                     className="amount-btn"
                     onClick={() => {
@@ -36,10 +33,19 @@ export default function CartItem({ id, img, title, price, amount }) {
                             dispatch(removeItem(id));
                             return;
                         }
-                        dispatch(decrease({ id }));
+                        dispatch(toggle({ increase: false, id }));
                     }}
                 >
-                    <ChevronDown />
+                    <MinusIcon />
+                </button>
+                <p className="amount">{amount}</p>
+                <button
+                    className="amount-btn"
+                    onClick={() => {
+                        dispatch(toggle({ increase: true, id }));
+                    }}
+                >
+                    <PlusIcon />
                 </button>
             </div>
         </article>

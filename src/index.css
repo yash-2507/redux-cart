@@ -231,6 +231,7 @@ Cart Item
   width: 8rem;
   height: 8rem;
   object-fit: cover;
+  border-radius: 20px;
 }
 .cart-item h4 {
   margin-bottom: 0.5rem;
@@ -261,6 +262,7 @@ Cart Item
 }
 .amount-btn svg {
   color: var(--clr-primary);
+  width: 20px;
 }
 .amount-btn:hover svg {
   color: var(--clr-primary-light);
@@ -270,6 +272,7 @@ Cart Item
   margin-bottom: 0;
   font-size: 1.25rem;
   line-height: 1;
+  font-weight: bold;
 }
 hr {
   background: var(--clr-grey-5);
