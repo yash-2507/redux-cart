@@ -233,6 +233,7 @@ Cart Item
   height: 8rem;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: 0 3px 10px 5px rgb(0 0 0 / 0.2);
 }
 .cart-item h4 {
   margin-bottom: 0.5rem;
