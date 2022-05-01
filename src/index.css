@@ -122,7 +122,8 @@ Navbar
   margin-top: 5rem;
 }
 nav {
-  background: var(--clr-primary);
+  /* background: var(--clr-primary); */
+  background: rgb(54,187,138);
   padding: 1.25rem 2rem;
 }
 .nav-center {
@@ -153,7 +154,8 @@ nav svg {
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
-  background: var(--clr-primary-light);
+  /* background: var(--clr-primary-light); */
+  background: rgb(105, 228, 180);
   display: flex;
   align-items: center;
   justify-content: center;
